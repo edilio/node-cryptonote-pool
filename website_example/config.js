@@ -1,14 +1,16 @@
-var api = "http://cryppit.com:8117";
+var hostName = window.location.hostname;
+
+var api = "http://" + hostName + ":8117";
 
 var coinUnits = 1000000000000;
 
-var poolHost = "cryppit.com";
+var poolHost = "xmr.mockingjaysoft.com";
 
 var irc = "irc.freenode.net/#monero-pools";
 
-var email = "support@cryppit.com";
+var email = "support@xmr.mockingjaysoft.com";
 
-var cryptonatorWidget = ["XMR-BTC", "XMR-USD", "XMR-EUR", "XMR-GBP"];
+var cryptonatorWidget = ["BTC-USD", "XMR-BTC", "XMR-USD", "XMR-EUR", "XMR-GBP"];
 
 var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
 
