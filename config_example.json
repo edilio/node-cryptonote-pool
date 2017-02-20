@@ -38,7 +38,7 @@
             },
             {
                 "port": 8888,
-                "difficulty": 10000,
+                "difficulty": 100000,
                 "desc": "Hidden port",
                 "hidden": true
             }
