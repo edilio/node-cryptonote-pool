@@ -1,6 +1,7 @@
 var hostName = window.location.hostname;
 
-var api = "http://" + hostName + ":8117";
+//var api = "http://" + hostName + ":8117";
+var api = "http://" + "192.168.1.86" + ":8117";
 
 var coinUnits = 1000000000000;
 
