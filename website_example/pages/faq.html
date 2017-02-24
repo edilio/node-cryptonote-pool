@@ -1,0 +1,93 @@
+<div id="faq">
+    <section class="main-content">
+        <h1 id="monero-pool-faq">monero-pool-faq</h1>
+        <!-- vim-markdown-toc GFM -->
+        <ul>
+            <li><a href="#general-purpose-of-this-document">General purpose of this document</a></li>
+            <li><a href="#questions-and-answers" data-ajax="false">Questions and Answers</a>
+                <ul>
+                    <li><a href="#i-have-different-machines-mining-should-i-point-them-to-same-wallet-or-will-that-confuse-the-pool" data-ajax="false">I have different machines mining, should I point them to same wallet? or will that confuse the pool?</a></li>
+                    <li><a href="#i-have-been-mining-for-some-time-now-but-my-balance-is-still-zero">I have been mining for some time now, but my balance is still zero!</a></li>
+                    <li><a href="#when-i-will-get-my-monero">When I will get my Monero?</a></li>
+                    <li><a href="#can-i-get-paid-on-market-wallet-directly">Can I get paid on market wallet directly?</a></li>
+                    <li><a href="#how-can-i-check-if-the-balance-is-updated">How can I check if the balance is updated?</a></li>
+                    <li><a href="#why-do-so-many-monero-pool-sites-have-very-similar-layout-is-their-an-open-source-git-or-something">Why do so many Monero pool sites have very similar layout is their an open source git or something?</a></li>
+                    <li><a href="#who-can-someone-help-me-my-account-is-showing-transfer-found-but-nothing-is-showing-up-in-my-wallet">Who can someone help me? My account is showing transfer found but nothing is showing up in my wallet?</a></li>
+                    <li><a href="#what-graphics-card-are-you-using">What graphics card are you using?</a></li>
+                    <li><a href="#wolf0-are-you-the-famous-miner-developer">Wolf0 are you the famous miner developer?</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- vim-markdown-toc -->
+
+        <h2 id="general-purpose-of-this-document" data-role="page">General purpose of this document</h2>
+
+        <p>Monero is a new generation cryptocurrency.
+            It is highly mined with cpu or gpu.
+            Pool Mining is the most common way to mine Monero.</p>
+
+        <p>Monero community is very active on IRC.
+            This document is the FAQ of the #Monero-pools channel on Freenode IRC network.
+            You will find answer to the most common questions asked on this channel, related to Monero mining, pool management, and pool development.</p>
+
+        <h2 id="questions-and-answers">Questions and Answers</h2>
+
+        <h3 id="i-have-different-machines-mining-should-i-point-them-to-same-wallet-or-will-that-confuse-the-pool">I have different machines mining, should I point them to same wallet? or will that confuse the pool?</h3>
+
+        <p>The short answer is: Use the same address on all your miners.
+            The wallet address is used by pool to identify you and associate the number of shares that you have submitted.
+            Most of the pools have payment thresholds, so if you use only one address, all your work will be associated with it, and you will reach the payment threshold faster.
+            You can still use different address, the pools don’t mind, but it will slow down your payments as the same amount of shares will be spread around all your submitted wallet addresses.</p>
+
+        <h3 id="i-have-been-mining-for-some-time-now-but-my-balance-is-still-zero">I have been mining for some time now, but my balance is still zero!</h3>
+
+        <p>In the current pool code, the balance is only updated after the pool discovers a new block, assuming that you submitted work for that block.
+            On small pool, it can take a few hours or even days to discover a new block, as such your balance can stay the same for a longer period of time.
+            But keep in mind that whatever pool (big or small) you mine, once a block is discovered you will get almost same reward.
+            For example instead of having 0.3xmr par day on big pool, you will receive around 3 XMR every 10 days.
+            But it can be stressful to wait 10 days with a 0 balance indicator.
+            Blocks also only unlock after the block is a particular age, and balances are not increased until this is hit.</p>
+
+        <h3 id="when-i-will-get-my-monero">When I will get my Monero?</h3>
+
+        <p>You will get your Monero once your balance reaches the payment threshold, then once the pool runs the next payment batch.
+            Depending of pool, payment batch is run every 6hours (it should be indicated on the pool website).</p>
+
+        <h3 id="can-i-get-paid-on-market-wallet-directly">Can I get paid on market wallet directly?</h3>
+
+        <p>It depends of the pool. Some of them support this feature.
+            Be very careful to use the exact payment ID provided by the market, as it is the only way for the market that the transferred funds belongs to you!</p>
+
+        <h3 id="how-can-i-check-if-the-balance-is-updated">How can I check if the balance is updated?</h3>
+
+        <p>Refreshing the pool webpage should be enough</p>
+
+        <h3 id="why-do-so-many-monero-pool-sites-have-very-similar-layout-is-their-an-open-source-git-or-something">Why do so many Monero pool sites have very similar layout is their an open source git or something?</h3>
+
+        <p>Yes most of pools share the same code base : <a href="https://github.com/zone117x/node-cryptonote-pool">https://github.com/zone117x/node-cryptonote-pool</a>
+            This was kindly coded by Zone11x.
+            Also some fork with improvement exists, but rarely on the frontend which is what you mostly see and compare.</p>
+
+        <h3 id="who-can-someone-help-me-my-account-is-showing-transfer-found-but-nothing-is-showing-up-in-my-wallet">Who can someone help me? My account is showing transfer found but nothing is showing up in my wallet?</h3>
+
+        <p>Try to refresh your wallet</p>
+
+        <h3 id="what-graphics-card-are-you-using">What graphics card are you using?</h3>
+
+        <h3 id="wolf0-are-you-the-famous-miner-developer">Wolf0 are you the famous miner developer?</h3>
+
+        <p>Be careful to verify that the user you are talking with is a registered user. If so, then there is a 99.9% chance that he is the one you are thinking about.
+            Scammers often work to impersonate famous people within channels, therefore always check before anything else.</p>
+
+
+
+        <footer class="site-footer">
+
+            <span class="site-footer-owner"><a href="https://github.com/netmonk/Monero-Pool-FAQ">Monero-Pool-FAQ</a> is maintained by <a href="https://github.com/netmonk">netmonk</a>.</span>
+
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        </footer>
+    </section>
+
+</div>
