@@ -1,1 +1,4 @@
-/* Insert your pool's unique Javascript here */
+function scrollTo(id){
+    document.getElementById(id).scrollIntoView();
+    return false;
+}
